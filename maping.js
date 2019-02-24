@@ -39,7 +39,7 @@ mapImg.addEventListener("load", function() {
   //drawCat();
   if (x.matches) {
     outputImgData = canvasOriginal.createImageData(200, 184);
-    MaxMovement = 3;
+    MaxMovement = 5;
     let clientX;
     let clientY;
     let deltaX, deltaY;
@@ -63,7 +63,7 @@ mapImg.addEventListener("load", function() {
         let ratioX = (mouseX / 200) * 2 - 1;
         let ratioY = ((mouseY - 0) * (1 - -1)) / (184 - 0) + -1;
         let displacementX = ratioX * MaxMovement;
-        let displacementY = ratioY * 1;
+        let displacementY = ratioY * 0;
 
         console.log(ratioX, ratioY);
 
